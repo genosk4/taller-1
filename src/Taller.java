@@ -25,7 +25,7 @@ public class Taller {
         return in.nextInt();
     }
 
-    public static void ejecutarOpcion(int opcion, Scanner in ) {
+    public static void ejecutarOpcion(int opcion, Scanner in) {
         in.nextLine();
         switch (opcion) {
             case 1 -> {
@@ -60,7 +60,7 @@ public class Taller {
             }
         }
     }
-    }
+
 
     public static void mostrarMenu() {
         System.out.println("----- Menu -----");
@@ -83,6 +83,7 @@ public class Taller {
         return textoLimpio.equals(textoInvertido);
 
     }
+
     public static int contarVocales(String texto) {
         if (texto == null) {
             return 0;
@@ -98,6 +99,7 @@ public class Taller {
         }
         return contador;
     }
+
     public static String encriptarTexto(String texto) {
         if (texto == null) {
             return null;
@@ -113,19 +115,16 @@ public class Taller {
                 .replace("O", "*")
                 .replace("U", "#");
     }
+
     public static String desencriptarTexto(String texto) {
 
         if (texto == null) {
             return null;
         }
-        return texto.replace("a", "@")
-                .replace("e", "&")
-                .replace("i", "!")
-                .replace("o", "*")
-                .replace("u", "#");
-
+        return texto.replace("@", "a")
+                .replace("&", "e")
+                .replace("!", "i")
+                .replace("*", "o")
+                .replace("#", "u");
+    }
 }
-
-void main() {
-}
-
