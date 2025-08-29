@@ -32,6 +32,7 @@ public class Taller {
         System.out.println("5.- Salir");
     }
     public void leerPalabra(Scanner in) {
+        String palabra;
 
     }
 
