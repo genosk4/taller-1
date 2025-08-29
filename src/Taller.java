@@ -21,10 +21,12 @@ public class Taller {
     }
 
     public static int leerOpcion(Scanner in) {
+        System.out.println("Seleccione una opcion: ");
         return in.nextInt();
     }
 
     public static void ejecutarOpcion(int opcion, Scanner in ) {
+        in.nextLine();
         switch (opcion) {
             case 1 -> {
                 System.out.print("Ingrese una frase: ");
@@ -51,7 +53,7 @@ public class Taller {
                 System.out.println("Frase desencriptada: " + desencriptado);
             }
             case 5 -> {
-                // No hacer nada, el bucle terminará
+                System.out.println("Saliendo");
             }
             default -> {
                 System.out.println("Opción no válida. Por favor, seleccione una opción del 1 al 5.");
